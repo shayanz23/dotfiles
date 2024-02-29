@@ -1,0 +1,3 @@
+echo 'speakers'
+echo 'headphones'
+
