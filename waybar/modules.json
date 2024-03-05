@@ -57,15 +57,6 @@
         },
         "separate-outputs": true
     },
-
-    // Youtube Subscriber Count
-    "custom/youtube": {
-        "format": " {}",
-        "exec": "python ~/private/youtube.py",
-        "restart-interval": 600,
-        "on-click": "chromium https://studio.youtube.com",
-        "tooltip": false
-    },
     
     // Cliphist
     "custom/cliphist": {
@@ -79,17 +70,17 @@
     // Wallpaper
     "custom/wallpaper": {
         "format": "",
-        "on-click": "~/dotfiles/hypr/scripts/wallpaper.sh select",
+        "on-click": "~/dotfiles/swww/run.sh",
         "on-click-right": "~/dotfiles/hypr/scripts/wallpaper.sh",
         "tooltip": false
     },
 
     // Waybar Themes
-    // "custom/waybarthemes": {
-    //     "format": "",
-    //     "on-click": "~/dotfiles/waybar/themeswitcher.sh",
-    //     "tooltip": false
-    // },
+    "custom/waybarthemes": {
+        "format": "",
+        "on-click": "~/dotfiles/waybar/themeswitcher.sh",
+        "tooltip": false
+    },
     
     // Settings
     "custom/settings": {
