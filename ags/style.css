@@ -1,0 +1,84 @@
+window.bar {
+    background-color: transparent;
+    color: white;
+    margin-top: 10px;
+}
+
+
+button {
+    min-width: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 18px;
+    background-color: transparent;
+}
+
+button:active {
+    background-color: #200046;
+}
+
+button:hover {
+    background-color: #240050;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.workspaces button.focused {
+    background-color: #1e0042;
+    
+}
+
+.workspaces button {
+    margin: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.client-title {
+    color: transparent;
+}
+
+.notification {
+    color: white;
+}
+
+.media {
+    border-radius: 18px;
+    background-color: #080013;
+}
+
+#center {
+    border-radius: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 7px;
+    background-color: #080013;
+}
+
+#left {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 7px;
+}
+
+#right {
+    border-radius: 18px;
+    padding-left: 3px;
+    padding-right: 15px;
+    margin-right: 10px;
+    margin-top: 7px;
+    background-color: #080013;
+}
+
+.tray-icons {
+    background-color: transparent;
+    padding: 6px;
+}
+
+#volume {
+    padding-right: 20px;
+}

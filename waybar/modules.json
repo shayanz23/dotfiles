@@ -75,6 +75,18 @@
         "tooltip": false
     },
 
+    "custom/updates": {
+        "format": "  {}",
+        "tooltip-format": "{}",
+        "escape": true,
+        "return-type": "json",       
+        "exec": "~/dotfiles/waybar/updates.sh",
+        "restart-interval": 60,
+        "on-click": "alacritty --class dotfiles-floating -e ~/dotfiles/scripts/installupdates.sh",
+        "on-click-right": "~/dotfiles/.settings/software.sh",
+        "tooltip": false
+    },
+
     // Waybar Themes
     "custom/waybarthemes": {
         "format": "",
@@ -98,7 +110,7 @@
 
     // Browser Launcher
     "custom/browser": {
-        "format": "",
+        "format": "",
         "on-click": "~/dotfiles/settings/defaults/browser.sh",
         "tooltip": false
     },    
@@ -158,7 +170,7 @@
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         // START CLOCK FORMAT
-        "format-alt": "{:%Y-%m-%d}",
+        "format": "{:%y-%m-%d, %H:%M}",
         // END CLOCK FORMAT
         "on-click": "~/dotfiles/settings/defaults/calendar.sh"
     },
@@ -172,13 +184,13 @@
     // CPU
     "cpu": {
         "format": "/ C {usage}% ",
-        "on-click": "alacritty -e htop"
+        "on-click": "kitty -e htop"
     },
 
     // Memory
     "memory": {
         "format": "/ M {}% ",
-        "on-click": "alacritty -e htop"
+        "on-click": "kitty -e htop"
     },
 
     // Harddisc space used
@@ -186,7 +198,7 @@
         "interval": 30,
         "format": "D {percentage_used}% ",
         "path": "/",
-        "on-click": "alacritty -e htop"
+        "on-click": "kitty -e htop"
     }, 
 
     "hyprland/language": {
@@ -263,7 +275,7 @@
             "car": "",
             "default": ["", " ", " "]
         },
-        "on-click": ""
+        "on-click": "sleep 0.2 && ~/dotfiles/audio/output/menu.sh | fuzzel --dmenu | ~/dotfiles/audio/output/process.sh"
     },
 
     // Bluetooth

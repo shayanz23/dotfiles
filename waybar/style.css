@@ -29,7 +29,7 @@
 
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     border-bottom: 0px solid #ffffff;
     /* color: #FFFFFF; */
     background: transparent;
@@ -37,12 +37,16 @@ window#waybar {
     transition-duration: .5s;
 }
 
+window#waybar *:hover {
+    opacity: 1;
+}
+
 /* -----------------------------------------------------
  * Workspaces 
  * ----------------------------------------------------- */
 
 #workspaces {
-    background: rgba(0, 0, 0, 0.8);
+    background: #080013;
     margin: 2px 1px 3px 1px;
     padding: 0px 1px;
     border-radius: 15px;
@@ -60,14 +64,14 @@ window#waybar {
     border-radius: 15px;
     border: 0px;
     color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #200046;
     transition: all 0.3s ease-in-out;
     opacity: 0.4;
 }
 
 #workspaces button.active {
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    background: #200046;
     border-radius: 15px;
     min-width: 40px;
     transition: all 0.3s ease-in-out;
@@ -75,10 +79,11 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    opacity: 0.7;
+    color: rgb(255, 255, 255);
+    background: #200046;
+    border-radius: 30px;
+    opacity: 0.8;
+    border-color: rgba(255, 255, 255, 0.8);
 }
 
 /* -----------------------------------------------------
@@ -87,7 +92,7 @@ window#waybar {
 
 tooltip {
     border-radius: 10px;
-    background-color: #000000;
+    background-color: #080013;
     opacity: 0.8;
     padding: 20px;
     margin: 0px;
@@ -102,7 +107,7 @@ tooltip label {
  * ----------------------------------------------------- */
 
 #window {
-    background: #000000;
+    background: #080013;
     margin: 5px 15px 5px 0px;
     padding: 2px 10px 0px 10px;
     border-radius: 12px;
@@ -121,14 +126,14 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #taskbar {
-    background: rgba(0, 0, 0, 0.8);
+    background: #080013;
     margin: 3px 15px 3px 0px;
     padding: 0px;
     border-radius: 15px;
     font-weight: normal;
     font-style: normal;
     opacity: 0.8;
-    border: 3px solid rgba(0, 0, 0, 0.8);
+    border: 3px solid #080013;
 }
 
 #taskbar button {
@@ -221,7 +226,7 @@ window#waybar.empty #window {
 
 #custom-appmenu,
 #custom-appmenuwlr {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -247,7 +252,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-updates {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -257,7 +262,7 @@ window#waybar.empty #window {
 }
 
 #custom-updates.green {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
 }
 
 #custom-updates.yellow {
@@ -275,7 +280,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-youtube {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -307,7 +312,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #clock {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -322,7 +327,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #pulseaudio {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -332,7 +337,7 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -341,7 +346,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #network {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -351,12 +356,12 @@ window#waybar.empty #window {
 }
 
 #network.ethernet {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     color: rgba(255, 255, 255, 0.8);
 }
 
 #network.wifi {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -367,7 +372,7 @@ window#waybar.empty #window {
 #bluetooth,
 #bluetooth.on,
 #bluetooth.connected {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -387,7 +392,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #battery {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -399,12 +404,12 @@ window#waybar.empty #window {
 #battery.charging,
 #battery.plugged {
     color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #080013;
 }
 
 @keyframes blink {
     to {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #080013;
         color: rgba(255, 255, 255, 0.8);
     }
 }

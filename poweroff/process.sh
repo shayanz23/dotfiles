@@ -7,7 +7,7 @@ if [ "$foo" = "suspend" ]; then
 elif [ "$foo" = "shutdown" ]; then
     shutdown now
 elif [ "$foo" = "logout" ]; then
-    loginctl terminate-user shayanz
+    loginctl terminate-user $USER
 elif [ "$foo" = "restart" ]; then
     shutdown -r now
 fi
