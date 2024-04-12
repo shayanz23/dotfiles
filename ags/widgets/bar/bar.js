@@ -206,7 +206,7 @@ function Right() {
   });
 }
 
-export default (monitor = 0) => {
+function Bar(monitor = 0) {
   return Widget.Window({
     name: `bar-${monitor}`, // name has to be unique
     class_name: "bar",
@@ -220,3 +220,12 @@ export default (monitor = 0) => {
     }),
   });
 };
+
+export default () => {
+  const bars = []
+  hyprland.monitors.forEach(monitor => {
+    print("monitor id: ", monitor.id);
+    bars.push(Bar(monitor.id));
+  });
+  return bars;
+}

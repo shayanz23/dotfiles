@@ -1,11 +1,16 @@
-import Bar from './widgets/bar/bar.js'
+import Bars from './widgets/bar/bar.js'
 
-App.config({
-    style: "./style.css",
-    windows: [
-        Bar(0),
-        Bar(1)
-    ],
-})
+function configWindows() {
+    const windows = []
+
+    windows.push(Bars())
+    
+    App.config({
+        style: "./style.css",
+        windows: windows,
+    })
+}
+
+configWindows();
 
 export { }
