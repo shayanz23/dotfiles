@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="11.52pt"
+    height="11.52pt"
+    viewBox="0 0 11.52 11.52">
+<defs/>
+<path id="shape0" transform="matrix(0.72 0 0 0.72 1.08 0)" fill="#222222" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" d="M6.5 0C5.67188 0 5 0.671875 5 1.5C5 1.57422 5.00781 1.64844 5.01563 1.72266C2.92578 2.375 1.5 4.30859 1.5 6.5L1.5 11L1 11C0.445312 11 0 11.4453 0 12C0 12.5547 0.445312 13 1 13L12 13C12.5547 13 13 12.5547 13 12C13 11.4453 12.5547 11 12 11L11.4961 11L11.4961 6.59375C11.5 6.5625 11.5 6.53125 11.5 6.5C11.5 4.30859 10.0742 2.375 7.98047 1.72656C7.99609 1.64844 8 1.57422 8 1.5C8 0.671875 7.33203 4.44089e-16 6.5 0ZM6.5 3.5C8.15625 3.5 9.5 4.84375 9.5 6.5L9.5 11L3.5 11L3.5 6.5C3.5 4.84375 4.84375 3.5 6.5 3.5ZM4.5 14C4.5 14.7148 4.88281 15.375 5.5 15.7305C6.11719 16.0898 6.88281 16.0898 7.5 15.7305C8.11719 15.375 8.5 14.7148 8.5 14ZM4.5 14" sodipodi:nodetypes="ccccccccccccccccccccccccccccc"/><path id="shape1" transform="translate(0.978749950549394, 0.112499994316022)" fill="none" stroke="#000000" stroke-width="0.7272" stroke-linecap="square" stroke-linejoin="bevel" d="M2.0475 0L1.035 0.72L0.3825 1.40625L0 2.08125" sodipodi:nodetypes="cccc"/><path id="shape2" transform="translate(8.69624956062851, 0.191249990337238)" fill="none" stroke="#000000" stroke-width="0.7272" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0L0.9 0.73125L1.83375 2.115" sodipodi:nodetypes="ccc"/><path id="shape3" transform="translate(10.4062494742321, 1.78874990962475)" fill="none" stroke="#000000" stroke-width="0.7272" stroke-linecap="square" stroke-linejoin="bevel" d="M0.0225 0L0 0.135" sodipodi:nodetypes="cc"/>
+</svg>

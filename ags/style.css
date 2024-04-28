@@ -1,7 +1,6 @@
 window.bar {
     background-color: transparent;
     color: white;
-    margin-top: 10px;
 }
 
 
@@ -10,7 +9,7 @@ button {
     padding-top: 0;
     padding-bottom: 0;
     border-radius: 18px;
-    background-color: transparent;
+    background-color: #080013;
 }
 
 button:active {
@@ -18,24 +17,31 @@ button:active {
 }
 
 button:hover {
-    background-color: #240050;
+    background-color: #300169;
 }
 
 label {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
+}
+
+.workspaces {
+    border-radius: 18px;
+    background-color: #080013;
 }
 
 .workspaces button.focused {
-    background-color: #1e0042;
-    
+    background-color: #300069;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 18px;
 }
 
 .workspaces button {
-    margin: 2px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    
+    border-radius: 18px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .client-title {
@@ -47,14 +53,11 @@ label {
 }
 
 .media {
-    border-radius: 18px;
     background-color: #080013;
 }
 
 #center {
     border-radius: 18px;
-    padding-left: 2px;
-    padding-right: 2px;
     margin-top: 7px;
     background-color: #080013;
 }
@@ -67,10 +70,8 @@ label {
 
 #right {
     border-radius: 18px;
-    padding-left: 3px;
     margin-right: 10px;
     margin-top: 7px;
-    background-color: #080013;
 }
 
 .tray-icons {
@@ -78,6 +79,36 @@ label {
     padding: 6px;
 }
 
+#tray {
+    background-color: #080013;
+    border-radius: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0;
+}
+
 #volume {
-    padding-right: 20px;
+    padding-right: 10px;
+}
+
+#current-title {
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 18px;
+    background-color: #080013;
+}
+
+#bt-indicator {
+    padding-right: 10px;
+}
+
+#ntw-ind {
+    padding-right: 5px;
+}
+
+#notif-btn {
+    padding: 4px;
+    margin-right: 0;
+    margin-left: 0;
 }
