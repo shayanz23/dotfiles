@@ -1,5 +1,7 @@
-#! /usr/bin/bash
+#!/run/current-system/sw/bin/bash
 sleep 1
+
+echo donkey
 
 while [ true ]
 do

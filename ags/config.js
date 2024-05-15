@@ -1,28 +1,44 @@
-const hyprland = await Service.import("hyprland");
+const main = "/tmp/ags/main.js"
+const entry = `${App.configDir}/main.ts`
+const bundler = "esbuild"
 
-App.addIcons(`${App.configDir}/assets`);
-
-import Bars from "./widgets/bar/bar.js";
-
-let windows = [];
-
-hyprland.connect("monitor-added", () => {
-  Utils.exec(App.configDir + "/launch.sh");
-});
-
-hyprland.connect("monitor-removed", () => {
-  Utils.exec(App.configDir + "/launch.sh");
-});
-
-function configWindows() {
-  windows.push(...Bars());
-  for (let i = 0; i < windows.length; i++) {
-    App.addWindow(windows[i]);
-  }
+const v = {
+  ags: pkg.version?.split(".").map(Number) || [],
+  expect: [1, 8, 0],
 }
 
-App.config({
-  style: "./style.css",
-});
-configWindows();
-export {};
+try {
+  console.log(bundler);
+  switch (bundler) {
+    case "bun": await Utils.execAsync([
+      "bun", "build", entry,
+      "--outfile", main,
+      "--external", "resource://*",
+      "--external", "gi://*",
+      "--external", "file://*",
+    ]); break
+    case "esbuild": await Utils.execAsync([
+      "esbuild", "--bundle", entry,
+      "--format=esm",
+      `--outfile=${main}`,
+      "--external:resource://*",
+      "--external:gi://*",
+      "--external:file://*",
+    ]); break
+
+    default:
+      throw `"${bundler}" is not a valid bundler`
+  }
+
+  if (v.ags[1] < v.expect[1] || v.ags[2] < v.expect[2]) {
+    print(`my config needs at least v${v.expect.join(".")}, yours is v${v.ags.join(".")}`)
+    App.quit()
+  }
+
+  await import(`file://${main}`)
+} catch (error) {
+  console.error(error)
+  App.quit()
+}
+
+export { }

@@ -38,14 +38,17 @@ label {
 }
 
 .workspaces button {
+    color: white;
     border-radius: 18px;
     padding: 0;
     padding-left: 10px;
     padding-right: 10px;
+    padding: 6px;
 }
 
 .client-title {
     color: transparent;
+    padding: 6px;
 }
 
 .notification {
@@ -57,29 +60,34 @@ label {
 }
 
 #center {
+    color: white;
     border-radius: 18px;
     margin-top: 7px;
     background-color: #080013;
 }
 
 #left {
+    color: white;
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 7px;
 }
 
 #right {
+    color: white;
     border-radius: 18px;
     margin-right: 10px;
     margin-top: 7px;
 }
 
 .tray-icons {
+    color: white;
     background-color: transparent;
     padding: 6px;
 }
 
 #tray {
+    color: white;
     background-color: #080013;
     border-radius: 18px;
     padding-left: 5px;
@@ -88,7 +96,9 @@ label {
 }
 
 #volume {
+    color: white;
     padding-right: 10px;
+    padding-left: 5px;
 }
 
 #current-title {
@@ -100,15 +110,27 @@ label {
 }
 
 #bt-indicator {
+    color: white;
     padding-right: 10px;
 }
 
 #ntw-ind {
+    color: white;
     padding-right: 5px;
 }
 
 #notif-btn {
+    color: white;
     padding: 4px;
     margin-right: 0;
     margin-left: 0;
+    padding: 6px;
+}
+
+.clock {
+    color: white;
+}
+
+#q-settings {
+    padding: 6px;
 }

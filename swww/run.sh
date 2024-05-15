@@ -1,6 +1,6 @@
-#! /usr/bin/bash
+#!/run/current-system/sw/bin/bash
 sleep 1
 
-killall slideshow.sh
+#killall slideshow.sh
 
 ~/dotfiles/swww/slideshow.sh
