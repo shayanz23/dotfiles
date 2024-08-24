@@ -7,7 +7,8 @@ if [ "$foo" = "suspend" ]; then
 elif [ "$foo" = "shutdown" ]; then
     shutdown now
 elif [ "$foo" = "logout" ]; then
-    loginctl terminate-user $USER
+    # loginctl terminate-user $USER
+    hyprctl dispatch exit
 elif [ "$foo" = "restart" ]; then
     shutdown -r now
 fi
